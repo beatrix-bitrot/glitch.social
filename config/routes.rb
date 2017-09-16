@@ -226,6 +226,8 @@ Rails.application.routes.draw do
       resources :streaming, only: [:index]
       resources :custom_emojis, only: [:index]
 
+      get '/streaming/*stuff', to: 'streaming#index'
+
       get '/search', to: 'search#index', as: :search
 
       resources :follows,    only: [:create]
