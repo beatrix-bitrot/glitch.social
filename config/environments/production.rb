@@ -97,6 +97,7 @@ Rails.application.configure do
     'X-XSS-Protection'        => '1; mode=block',
     'Content-Security-Policy' => "frame-ancestors 'none'; object-src 'none'; script-src 'self' https://static.glitch.social; base-uri 'none';" , 
     'Referrer-Policy'         => 'no-referrer, strict-origin-when-cross-origin',
-    'Strict-Transport-Security' => 'max-age=63072000; includeSubDomains; preload'
+    'Strict-Transport-Security' => 'max-age=63072000; includeSubDomains; preload',
+    'X-Clacks-Overhead' => 'GNU Natalie Nguyen'
   }
 end
